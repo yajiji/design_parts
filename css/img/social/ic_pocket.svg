@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_pocket</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ic_pocket" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M37.5,3 L2.5,3 C1.1225,3 0,4.1225 0,5.5 L0,19.25 C0,29.59 8.41,38 18.75,38 L21.25,38 C31.59,38 40,29.59 40,19.25 L40,5.5 C40,4.1225 38.88,3 37.5,3 Z M31.7675,17.2675 L21.7675,27.2675 C21.28,27.755 20.64,28 20,28 C19.36,28 18.72,27.755 18.2325,27.2675 L8.2325,17.2675 C7.255,16.29 7.255,14.71 8.2325,13.7325 C9.21,12.755 10.79,12.755 11.7675,13.7325 L20,21.965 L28.2325,13.7325 C29.21,12.755 30.79,12.755 31.7675,13.7325 C32.745,14.71 32.745,16.29 31.7675,17.2675 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6" lang="ja"
+	itemscope 
+	itemtype="http://schema.org/WebSite" 
+	prefix="og: http://ogp.me/ns#" > <![endif]-->
+<!--[if IE 7]> <html class="i7" lang="ja"
+	itemscope 
+	itemtype="http://schema.org/WebSite" 
+	prefix="og: http://ogp.me/ns#" > <![endif]-->
+<!--[if IE 8]> <html class="ie" lang="ja"
+	itemscope 
+	itemtype="http://schema.org/WebSite" 
+	prefix="og: http://ogp.me/ns#" > <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="ja"
+	itemscope 
+	itemtype="http://schema.org/WebSite" 
+	prefix="og: http://ogp.me/ns#" > <!--<![endif]-->
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>menu</title>
+<meta charset="utf-8">
+<meta name="description" itemprop="description" content="" />
+<meta name="keywords" itemprop="keywords" content="" />
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+
+<link rel="stylesheet" href="./css/normalize.css">
+<link rel="stylesheet" href="./css/style.css">
+<!--[if lt IE 9]>
+<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<style>
+	.nav-wrap {
+  width:50%;
+  margin: 0 auto;
+  }
+
+#menu {
+  display:none;
+}
+
+#navdestop {
+	overflow: hidden;
+	transition: height 1s ease-in-out;
+	width: 100%;
+	background: #ff285b;
+	margin-top: 0;
+	right: 0;
+	height: 0;
+	overflow: hidden;
+	top:0;
+	float:none;
+	z-index: 100;
+	position: fixed;
+	margin-top: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+    }
+	
+#menu:checked ~ #navdestop {
+	height:100%;
+	}
+
+#navdestop ul {
+	height: 100%;
+	width: 90%;
+	padding-top: 0;
+	position: fixed;
+	left: 0;
+	margin-left: 5%;
+	}	
+	
+#navdestop ul li {
+	display:block;
+	text-align: left;
+	position: relative;
+	top: 0;
+	transition: top 1s ease-in-out;
+	margin: 0;
+	}
+	
+#navdestop.open ul li {
+	top: 25%;
+	width: 100%;
+	text-align: left;
+	}
+
+#navdestop.open a {
+	display: inline-block;
+	font: 3rem 'worksans_bold';
+	text-decoration: none;
+	position: relative;
+	}
+
+#navdestop a {
+	display: inline-block;
+	font: 3rem 'worksans_bold';
+	text-decoration: none;
+	position: relative;
+	color:#f0f0f0;
+	}
+
+#navigation-animation {
+	height: 100%;
+	}
+
+	
+/* #################### Burgermenu ######################## */
+	
+.burger_menu {
+	position: fixed;
+	top: 35px;
+	right: 5%;
+	display: block;
+	cursor: pointer;
+	height: 21px;
+	width: 25px;
+	z-index: 101;
+	}
+
+.burger_menu span {
+	display: block;
+	top: 8px;
+    height: 3px;
+    background: #1d1d1d;
+	position: relative;
+	-webkit-transition: width 0.2s ease-in-out;
+	-moz-transition: width 0.2s ease-in-out;
+	-o-transition: width 0.2s ease-in-out;
+	transition: width 0.2s ease-in-out;
+	}
+
+.burger_menu span {
+	width: 25px;	
+	}
+	
+.burger_menu span::after, .burger_menu span::before {
+	display: block;
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 3px;
+	background: #1d1d1d;
+	transition-property: margin, -webkit-transform;
+	-webkit-transition-property: margin, -webkit-transform;
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	-ms-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-transition-delay: 0.2s, 0s;
+	-moz-transition-delay: 0.2s, 0s;
+	-ms-transition-delay: 0.2s, 0s;
+	-o-transition-delay: 0.2s, 0s;
+	transition-delay: 0.2s, 0s;
+	}
+	
+.burger_menu span::before {
+	margin-top: -8px;
+  	}
+
+.burger_menu span::after {
+	margin-top: 8px;
+  	}
+	
+#menu:checked ~ .burger_menu span::before, #menu:checked ~ .burger_menu span::after {
+	margin-top: 0px;
+	-webkit-transition-delay: 0.1s, 0.5s;
+	-moz-transition-delay: 0.1s, 0.5s;
+	-ms-transition-delay: 0.1s, 0.5s;
+	-o-transition-delay: 0.1s, 0.5s;
+	transition-delay: 0.1s, 0.5s;
+	}
+	
+#menu:checked ~ .burger_menu span::before {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	}
+  
+#menu:checked ~ .burger_menu span::after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	}
+	
+#menu:checked ~ .burger_menu span{
+	width:0;
+	}	
+
+</style>
+
+</head>
+<body>
+	
+	
+	<div class="nav-wrap">
+  <input type="checkbox" id="menu">
+  <label for="menu" class="burger_menu"><span></span></label>
+  <nav id="navdestop" class="close">
+    <div id="navigation-animation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="aboutme.html">About me</a></li>
+        <li><a href="kontakt.php">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'ja'}
+</script>
+
+
+
+</body>
+</html>
